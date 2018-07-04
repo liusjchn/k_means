@@ -90,7 +90,7 @@ def gennerate_k(data_set, k):
             min_key = "min_%d" % i
             max_key = "max_%d" % i
             if min_key not in min_max or val < min_max[min_key]:
-                min_max[max_key] = val
+                min_max[min_key] = val
             if min_key not in min_max or val > min_max[max_key]:
                 min_max[max_key] = val
     
